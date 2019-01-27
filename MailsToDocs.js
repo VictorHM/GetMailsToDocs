@@ -31,7 +31,6 @@ function getMailsToDoc() {
     var messages = threads[i].getMessages()
     //DEBUG Log contents of the mails bodies to debug traces
     Logger.log(messages[0].getPlainBody());
-    .
     for (var j = 0; j < messages.length; j++) {
       if(senderEmail == messages[j].getFrom()){
         //DEBUG Log address of sender to debug traces
